@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=Spartan:wght@500&display=swap');
+*{
+	font-family: 'Poppins', sans-serif;
+	font-family: 'Spartan', sans-serif;
+	margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+:root{
+	--color1: #1F2833;
+	--color2: #66FCF1;
+	--white: #EDF5D1;
+}
+/*-----body-----*/
+body{
+	background: var(--color1);
+}
+*::selection{
+	background: var(--color1);
+	color: var(--color2);
+}
+/*-----html-----*/
+html{
+	font-size: 90%;
+	overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width:1.4rem;
+}
+html::-webkit-scrollbar-thumb{
+    background:var(--color2);
+}
+html::-webkit-scrollbar-track{
+    background:var(--color1);
+}
+/*-----section-----*/
+section{
+    min-height: 100vh;
+    padding:1rem;
+}
+/*-----header-----*/
+header .data img{
+    height:10rem;
+    width:10rem;
+    border-radius: 60%;
+    object-fit: cover;
+    border:.5rem solid var(--color1);
+}
+header{
+    position: fixed;
+    top:0; left:0;
+    z-index: 1000;
+    height:100%;
+    width:23rem;
+    background:var(--color2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+header .data .uname{
+	font-size: 2rem;
+    color:#fff;
+}
+header .navigation{
+	width: 100%;
+}
+header .navigation ul{ /*removing UL styles*/
+    list-style: none;
+    padding:1rem 3rem;
+}
+header .navigation ul li a{
+    display: block;
+    padding:1rem;
+    margin:.5rem 0;
+    background:var(--color2);
+    color:#fff;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+header .navigation ul li a:hover{
+    background:var(--color1);
+}
+/*-----Menu-----*/
+#menu{
+    position: fixed;
+    top:2rem; right:2rem;
+    background:#00000;
+    color:#FF0000;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding:1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+/*-----Home Section-----*/
+.home{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding:0 15rem;
+}
+.home h4{
+	flex-flow: column;
+    padding:0 15rem;
+	justify-content: center;
+    font-size: 2.5rem;
+    color:#fff;
+}
+.home h4 span{
+    color:var(--color2);
+}
+.home h6{
+	flex-flow: column;
+    padding:0 15rem;
+	justify-content: center;
+    font-size: 2.5rem;
+    color:#fff;
+}
+.home h6 span{
+    color:var(--color2);
+}
+/*-----About Section-----*/
+.about p{
+    margin-left: 25rem ;
+    text-align: center;
+    color:#fff;
+    padding: 17rem;
+    font-size: 1.5rem;
+}
+.about p span{
+    color:var(--color2);
+}
+.about h2{
+    color: var(--color2);
+}
+.about span{
+    color:var(--color2);
+}
+.about a{
+	color: inherit;
+
+}
+/*-----Contact Sction-----*/
+.contact{
+	margin-left: 30rem;
+    text-align: left;
+    color:#fff;
+    padding: 7rem 0;
+    font-size: 1.5rem;
+}
+.contact h2{
+	color: var(--color2);
+}
+.ico a{
+    text-align: center;
+    color:#fff;
+    padding: 5rem 0;
+    font-size: 125px;
+    color: var(--color2);
+    margin-right: 70px;
+}
+.ico a:hover{
+    color: var(--white);
+}
+.foot{
+    padding: 7rem 0;
+    text-align: center;
+}
+/*-----Academics-----*/
+.acad{
+    margin-left: 30rem;
+    text-align: left;
+    padding: 7rem 0;
+    font-size: 1.5rem
+}
+.acad h2{
+    color: var(--color2);
+}
+.box{
+    padding: 4rem 0;
+    color: white;
+}
+/*-----Skills-----*/
+.skills{
+    margin-left: 30rem;
+    text-align: left;
+    color:var(--white);
+    font-size: 1.5rem;
+} 
+.skills h2{
+    text-align: left;
+    padding: 7rem 0;
+    color: var(--color2);
+}
+.skill-bar{
+  height: 14px;
+  background: var(--color1);
+  border-radius: 3px;
+}
+
+.skill-per{
+  height: 14px;
+  background: var(--color2);
+  border-radius: 3px;
+  position: relative;
+  animation: fillBars 2.5s ;
+}
+
+.skill-per::before{
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background: var(--color1);
+  border-radius: 4px;
+  font-size: 12px;
+  top: -35px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.skill-per::after{
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: var(--color1);
+  top: -20px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+}
+
+@keyframes fillBars{
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%;
+  }
+}
