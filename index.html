@@ -1,112 +1,336 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>K Kartikeya Rao Pagadala</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Kartikeya Pagadala - Software Engineer</title>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-<!-----Header----->
-<header>
-    <div class="data">
-        <img src="css/img1.jpg">
-        <h4 class="uname">K Kartikeya Rao Pagadala</h4>
-        <br>
-        <h5 class="ab">Graduate Student</h5>
-    </div>
-    <nav class="navigation">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#acad">Academics</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-        </ul>
-    </nav>
-</header>
-<div id="menu" class="bars"></div>
-
-<!-----Home----->
-<section id="home"class="home">
-<h4>Hey There,</h4><h4>I'm <span>K Kartikeya Rao Pagadala</span></h4> 
-<br>
-
-<h6>Welcome to My <span>Portfoilo</span></h6>
-</section>
-<!-----About----->
-<section id="about"class="about">
-    <h2 class="head">About Me</h2>
-    <div class="row">
-        <p>People aslo know me as Karthik Rao, I Have completed my bachelor's in <span>Computer Science Engineering</span> from <a href="https://www.gitam.edu/hyderabad" target="new">GITAM Deemed to Be University</a>, India.<br><br>
-         At Present I'm Pursuing my <span>Master's of Applied Computing</span> from <a href="https://www.uwindsor.ca/" target="new"> University of Windsor</a>.
-    </p>
-    </div>
-</section>
-<!-----Academic Background----->
-<section id="acad" class="acad">
-    <h2 class="head">Academics</h2>
-    <div class="box">
-        <i class="fa fa-graduation-cap"></i> <span>2015</span>   
-        <h3>Schooling CBSE</h3>
-        <br>
-        <i class="fa fa-graduation-cap"></i> <span>2017</span>
-        <h3>Intermediate MPC  TSBIE</h3>
-        <br>
-        <i class="fa fa-graduation-cap"></i> <span>2021</span>
-         <h3>B.Tech GITAM Hyderabad</h3>
-    </div>
-</section>
-<!-----Skills----->
-<section id="skills" class="skills">
-    <h2 class="head">My Skills</h2>
-    <div class="skill">
-    <div class="skill-name">C</div>
-    <div class="skill-bar"><div class="skill-per" per="90%" style="max-width:90%"></div></div>
-    <br>
-    <div class="skill-name">C++</div>
-    <div class="skill-bar"><div class="skill-per" per="90%" style="max-width:90%"></div></div>
-    <br>
-    <div class="skill-name">Java</div>
-    <div class="skill-bar"><div class="skill-per" per="85%" style="max-width:85%"></div></div>
-    <br>
-    <div class="skill-name">Python</div>
-    <div class="skill-bar"><div class="skill-per" per="90%" style="max-width:90%"></div></div>
-    <br>
-    <div class="skill-name">HTML</div>
-    <div class="skill-bar"><div class="skill-per" per="85%" style="max-width:85%"></div></div>
-    <br>
-    <div class="skill-name">CSS</div>
-    <div class="skill-bar"><div class="skill-per" per="65%" style="max-width:65%"></div></div>
-    <br>
-    <div class="skill-name">JS</div>
-    <div class="skill-bar"><div class="skill-per" per="75%" style="max-width:75%"></div></div>
-    <br>
-    <div class="skill-name">ML and AI</div>
-    <div class="skill-bar"><div class="skill-per" per="65%" style="max-width:65%"></div></div>
-    
-    </div>
-</section>
-<!-----Contact----->
-<section id="contact"class="contact">
-    <div class="row">
-        <div class="content">
-            <h2 class="head">Contact Me</h2>
-            <br>
-            <br>
-            <h4>Email: <a href="mailto:pagadalk@uwindsor.ca">pagadalk@uwindsor.ca</h4></a>
-            <h4> Address: <i class="map"></i> Windsor, Ontario, Canada.</h4>
+    <!-- Fixed Navbar -->
+    <nav class="fixed-nav">
+        <div class="container">
+            <div class="photo-frame animate__animated animate__fadeIn" id="sticky-photo">
+                <img src="css/kartikeya.jpg" alt="Kartikeya Pagadala" class="profile-pic">
+            </div>
+            <a href="#" class="brand-logo">Kartikeya Pagadala</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-        <div class="ico">
-        <a href="https://in.linkedin.com/in/k-kartikeya-rao-pagadala-2905b41b5" target="new" class="fa fa-linkedin"></a>
-        <a href="https://www.github.com/Karthik307" target="new"class="fa fa-github"></a>
-        <a href="https://www.facebook.com/Karthik.Rao.2611/" target="new" class="fa fa-facebook"></a>  
-        </div> 
-        <div class="foot">
-        <p>&copy; Kartikeya</p>
-    </div>
-    </div>
-</section>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <h1 class="animate__animated animate__fadeInUp">Kartikeya Pagadala</h1>
+            <p class="flow-text animate__animated animate__fadeInUp animate__delay-1s">Software Engineer | Tech Geek | Fast Learner</p>
+            <p class="sub-text animate__animated animate__fadeInUp animate__delay-2s">"Obsessed with code, learning new tech, and building smarter systems—fast."</p>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section scroll-section">
+        <div class="container">
+            <h2 class="animate__animated">About Me</h2>
+            <div class="card animate__animated">
+                <p>I’m a Software Engineer who thrives on cracking tough problems and mastering new tech. At TELUS, I slashed downtime by 80% and deployment time by 40% with CI/CD pipelines, GCP migrations, and Airflow automation.</p>
+                <p><strong>Journey:</strong> From Linux hacks to scalable cloud solutions—always learning, always coding.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section scroll-section alt-bg">
+        <div class="container">
+            <h2 class="animate__animated">Technical Skills</h2>
+            <div class="card animate__animated">
+                <p><span class="badge">Google Cloud Platform (GCP)</span> Cloud infrastructure & migrations</p>
+                <p><span class="badge">Apache Airflow</span> Workflow orchestration & DAGs</p>
+                <p><span class="badge">Python</span> Scripting, automation & ML</p>
+                <p><span class="badge">PostgreSQL</span> Database tuning & migrations</p>
+                <p><span class="badge">CI/CD Pipelines</span> Automation with GitHub Actions</p>
+                <p><span class="badge">Java</span> Web development & algorithms</p>
+                <p><span class="badge">Machine Learning</span> Supervised learning & CNNs</p>
+                <p><span class="badge">Data Analysis</span> Visualization & insights</p>
+                <p><span class="badge">NumPy</span> Data processing</p>
+                <p><span class="badge">Matplotlib</span> Data visualization</p>
+                <p><span class="badge">Mediation Zone</span> Telecom mediation</p>
+                <p><span class="badge">JavaScript</span> Frontend & scripting</p>
+                <p><span class="badge">OpenCV</span> Image processing</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section scroll-section">
+        <div class="container">
+            <h2 class="animate__animated">Work Experience</h2>
+            <div class="card animate__animated">
+                <h5>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/TELUS_Logo.svg/50px-TELUS_Logo.svg.png" alt="TELUS Logo" class="company-logo">
+                    Software Engineer, TELUS, Canada
+                </h5>
+                <p>Jan 2024 - Mar 2025</p>
+                <ul>
+                    <li>Reduced production downtime by 80%, implementing critical enhancements for Wireline operations.</li>
+                    <li>Implemented data pipelines for GCP migration projects, optimizing the Charging Mediation Framework (CMF).</li>
+                    <li>Wrote Airflow DAGs in Python, automating workflows, cutting errors by 60%.</li>
+                    <li>Developed and tuned PostgreSQL queries, migrating legacy databases to PostgreSQL.</li>
+                    <li>Built CI/CD pipelines with GitHub Actions, cutting deployment time by 40%.</li>
+                    <li>Enhanced automated testing and deployment processes, improving system reliability and efficiency.</li>
+                    <li>Authored technical documentation for CI/CD workflows and incident response, streamlining team operations.</li>
+                </ul>
+            </div>
+            <div class="card animate__animated">
+                <h5>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/83/University_of_Windsor_Logo.svg/50px-University_of_Windsor_Logo.svg.png" alt="University of Windsor Logo" class="company-logo">
+                    Web Developer Intern, University of Windsor, Windsor, ON
+                </h5>
+                <p>Jan 2023 - Apr 2023</p>
+                <ul>
+                    <li>Developed a student/faculty portal UI, enhancing navigation and user satisfaction.</li>
+                    <li>Created Python-based data visualizations for internal analytics reporting.</li>
+                    <li>Refactored legacy JavaScript code, improving performance by 30%.</li>
+                    <li>Integrated REST APIs to streamline data flow between frontend and backend systems.</li>
+                </ul>
+            </div>
+            <p class="quote animate__animated animate__fadeInUp">"Innovation distinguishes between a leader and a follower." - Steve Jobs</p>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section scroll-section alt-bg">
+        <div class="container">
+            <h2 class="animate__animated">Education</h2>
+            <div class="card animate__animated">
+                <h5>Master's Degree, Applied Computing - University of Windsor, Windsor, ON</h5>
+                <p>Jan 2022 - May 2023</p>
+                <p>Focused on advanced computing techniques and practical applications.</p>
+            </div>
+            <div class="card animate__animated">
+                <h5>Bachelor of Technology - BTech, Computer Science - GITAM Deemed University, Hyderabad, TG</h5>
+                <p>Jun 2017 - Aug 2021</p>
+                <p>Built a strong foundation in computer science and programming.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section scroll-section">
+        <div class="container">
+            <h2 class="animate__animated">Projects</h2>
+            <div class="card animate__animated">
+                <h5><i class="fas fa-cloud"></i> System Migration from Mediation Zone to Google Cloud Platform (GCP)</h5>
+                <p>Oct 2024 - Present | Associated with TELUS</p>
+                <ul>
+                    <li>Managed the end-to-end migration of data pipelines and services from Mediation Zone to GCP, optimizing performance and reducing downtime.</li>
+                    <li>Implemented Airflow to design and automate DAGs for workflow orchestration, streamlining processes and improving system reliability.</li>
+                    <li>Developed and automated key processes to ensure data consistency and real-time processing on the cloud platform.</li>
+                    <li>Enhanced and automated CI/CD pipelines to facilitate continuous deployment and integration, improving deployment speed.</li>
+                    <li>Provided ongoing support and troubleshooting of migrated systems for high availability and rapid issue resolution.</li>
+                </ul>
+                <p><strong>Skills:</strong> GCP, Workflow Management, Telecom Mediation, Mediation Zone, Automation, PostgreSQL, Apache Airflow, DAG</p>
+                <img src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=100" alt="GCP Migration" class="project-img">
+            </div>
+            <div class="card animate__animated">
+                <h5><i class="fas fa-chart-line"></i> Airbnb New User Booking Data Analysis</h5>
+                <p>Jul 2022 - Aug 2022</p>
+                <ul>
+                    <li>Worked on a dataset with 4500+ instances.</li>
+                    <li>Designed a Machine Learning model to predict similar places based on user reviews.</li>
+                    <li>Performed data analysis to understand booking trends by age and gender, visualized with maps.</li>
+                    <li>Created test cases to ensure accurate predictions by the ML model.</li>
+                </ul>
+                <p><strong>Skills:</strong> Data Analysis, Data Science, Python, Machine Learning</p>
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=100" alt="Airbnb Analysis" class="project-img">
+            </div>
+            <div class="card animate__animated">
+                <h5><i class="fas fa-map-marked-alt"></i> Travel Advisor</h5>
+                <p>Jun 2022 - Jul 2022</p>
+                <ul>
+                    <li>Utilized Matplotlib and NumPy for data processing and visualization.</li>
+                    <li>Developed and trained an ML model to recommend travel destinations based on user preferences, achieving 72% accuracy.</li>
+                    <li>Leveraged libraries for dynamic data visualization and in-depth analysis, enabling data-driven insights.</li>
+                    <li>Tested and validated model predictions against actual records.</li>
+                </ul>
+                <p><strong>Skills:</strong> Data Analysis, Python, Machine Learning Algorithms, NumPy</p>
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=100" alt="Travel Advisor" class="project-img">
+            </div>
+            <div class="card animate__animated">
+                <h5><i class="fas fa-search"></i> Web Search Engine</h5>
+                <p>Jan 2022 - Apr 2022</p>
+                <ul>
+                    <li>Developed a high-performing web-based search engine in a team of four.</li>
+                    <li>Used Java and Jsoup web crawler to extract data from connected websites.</li>
+                    <li>Implemented merge sort and Boyer-Moore algorithms for sorting and text pattern recognition.</li>
+                    <li>Optimized search efficiency with hash maps and array lists.</li>
+                </ul>
+                <p><strong>Skills:</strong> Java, Web Development, Web Technologies</p>
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=100" alt="Web Search Engine" class="project-img">
+            </div>
+            <div class="card animate__animated">
+                <h5><i class="fas fa-mobile-alt"></i> Mobile Phone Price Prediction</h5>
+                <p>Jun 2021 - Jun 2021</p>
+                <ul>
+                    <li>Built an ML prediction model comparing various algorithms for best accuracy.</li>
+                    <li>Created a webpage for users to input values and get price predictions.</li>
+                    <li>Integrated JavaScript for frontend interactivity.</li>
+                </ul>
+                <p><strong>Skills:</strong> Data Analysis, Web Development, Data Science, Machine Learning Algorithms, JavaScript</p>
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=100" alt="Mobile Price Prediction" class="project-img">
+            </div>
+            <div class="card animate__animated">
+                <h5><i class="fas fa-camera"></i> Face Mask Detection</h5>
+                <p>Apr 2020 - May 2020</p>
+                <ul>
+                    <li>Developed an image classification ML model using datasets of masked/unmasked faces.</li>
+                    <li>Built detection system with OpenCV to identify mask usage, triggering an alarm if absent.</li>
+                    <li>Ensured model accuracy through testing and validation.</li>
+                </ul>
+                <p><strong>Skills:</strong> Data Analysis, Data Science, Machine Learning Algorithms, OpenCV</p>
+                <img src="https://allai.nl/wp-content/uploads/2021/02/Screenshot-2021-02-11-at-16.52.15-495x400.png" alt="Face Mask Detection" class="project-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies -->
+    <section id="hobbies" class="section scroll-section alt-bg">
+        <div class="container">
+            <h2 class="animate__animated">Hobbies</h2>
+            <div class="card animate__animated">
+                <p><i class="fas fa-utensils"></i> Vegetarian Cook: Whipping up plant-based meals with a tech twist.</p>
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=100" alt="Veg Cooking" class="hobby-img">
+                <p><i class="fas fa-microchip"></i> Tech Enthusiast: Always tinkering with new tools and gadgets.</p>
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=100" alt="Tech Tinkering" class="hobby-img">
+                <p><i class="fas fa-music"></i> Music Lover: Learning new instruments, one chord at a time.</p>
+                <img src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=100" alt="Music Jam" class="hobby-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="section scroll-section">
+        <div class="container">
+            <h2 class="animate__animated">Certifications</h2>
+            <div class="card animate__animated">
+                <ul class="cert-list">
+                    <li><i class="fas fa-certificate"></i> Python Data Structures - Coursera</li>
+                    <li><i class="fas fa-certificate"></i> Cryptography - Coursera</li>
+                    <li><i class="fas fa-certificate"></i> Machine Learning Algorithms: Supervised Learning Tip to Tail - Coursera</li>
+                    <li><i class="fas fa-certificate"></i> Programming for Everybody (Getting Started with Python) - Coursera</li>
+                    <li><i class="fas fa-certificate"></i> Cloud Computing Basics (Cloud 101) - Coursera</li>
+                    <li><i class="fas fa-certificate"></i> Essentials of Entrepreneurship: Thinking & Action - Coursera</li>
+                    <li><i class="fas fa-certificate"></i> Introduction to CSS3 - Coursera</li>
+                    <li><i class="fas fa-certificate"></i> Compose and Program Music in Python using Earsketch - Coursera</li>
+                    <li><i class="fas fa-certificate"></i> Introduction to HTML5 - Coursera</li>
+                </ul>
+                <p class="highlight animate__animated animate__fadeInUp">Always leveling up my tech game!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section scroll-section alt-bg">
+        <div class="container">
+            <h2 class="animate__animated">Contact</h2>
+            <div class="card animate__animated">
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:pagadalakartikeya@gmail.com">pagadalakartikeya@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> Phone: (226)-975-5943</p>
+                <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/kartikeya-rao-pagadala/" target="_blank"> kartikeya-rao-pagadala</a></p>
+                <p class="highlight animate__animated animate__fadeInUp">Ready to geek out on your next project!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Kartikeya Pagadala</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-links a');
+            const sections = document.querySelectorAll('.scroll-section');
+            const hamburger = document.querySelector('.hamburger');
+            const nav = document.querySelector('.nav-links');
+
+            hamburger.addEventListener('click', () => {
+                nav.classList.toggle('active');
+                hamburger.classList.toggle('open');
+            });
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    nav.classList.remove('active');
+                    hamburger.classList.remove('open');
+                    triggerAnimations(targetSection);
+                });
+            });
+
+            function revealSections() {
+                sections.forEach(section => {
+                    const sectionTop = section.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    if (sectionTop < windowHeight - 100) {
+                        triggerAnimations(section);
+                    }
+                });
+            }
+
+            function triggerAnimations(section) {
+                if (!section.classList.contains('revealed')) {
+                    section.classList.add('revealed');
+                    const animElements = section.querySelectorAll('.animate__animated');
+                    animElements.forEach((el, index) => {
+                        el.style.opacity = 1;
+                        el.classList.add('animate__fadeInUp');
+                        el.style.animationDelay = `${index * 0.2}s`;
+                    });
+                }
+            }
+
+            window.addEventListener('scroll', revealSections);
+            revealSections();
+
+            document.querySelectorAll('.card').forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    card.classList.add('animate__pulse');
+                });
+                card.addEventListener('mouseleave', () => {
+                    card.classList.remove('animate__pulse');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
